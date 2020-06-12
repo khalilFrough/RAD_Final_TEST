@@ -1,0 +1,35 @@
+
+<div class="container">
+<h1 align="center">Clock+</h1>
+<h5 align="center">Clock+ build by Khalil Frough -email: s3489975@student.rmit.edu.au grade level:credit- tutor group:Wednesdays 14:30-16-30</h5>
+<div class="row">
+    <div class="col-4">
+        <div class="timing">
+            <span class="business-time"></span> Business time <br>
+            <span class="business-overtime"></span> Business overtime <br>
+            <span class="personal-time"></span> Personal time <br>
+            <i class="fa fa-moon"></i> Sleeping time <br>
+        </div>
+    </div>
+    <div class="col-4">
+    <% @cities.each do |city|%>
+        <div class="time-card">
+                <span class="city"><%= city.name%> </span>
+                <span class="time"><%=DateTime.now.in_time_zone(city.offset)%></span>
+        </div>
+       
+    <%end%>
+        
+    </div>
+    <div class="col-4">
+        <div class="color-theme">
+            <p>Color Theme </p>
+            <button class="custom-btn">Black</button>
+            <button class="custom-btn">Graphite</button>
+            <button class="custom-btn">White</button> <br><br>
+            <p><input type="checkbox" id="24-hours" name="clock" value="24-Hour"> 24-Hour Clock</p>
+            
+        </div> <!-- end of colo theme-->
+    </div>
+</div> <!-- end of row-->
+</div>

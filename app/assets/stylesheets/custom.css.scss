@@ -1,0 +1,109 @@
+@import "bootstrap";
+
+// styling the nav bar
+
+.navbar{
+    background-color:rgba(0,0,0 ,0.8)!important;
+
+    .navbar-brand{
+        color:white !important;
+        font-weight: bold;
+    }
+    .nav-item.active{
+        background-color:green !important;
+        border-radius: 25px;
+        .nav-link{
+            color:black !important;
+        }
+    }
+    .nav-link{
+        color:green !important;
+        font-weight: bold;
+    }
+}
+
+.main{
+    background-color: black;
+    height:80vh !important;
+    background-color:rgba(0,0,0 ,0.8);
+    color:white;
+}
+
+// styling the footer 
+
+.footer-right{
+    text-align: right;
+}
+.custom-footer{
+    padding-right:30px;
+    padding-left:30px;
+    padding-top:40px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    height:120px;
+    background-color: #B8B8B8;
+}
+#facebook{
+    color:#3b5998;
+    border-radius: 50px;
+}
+#twitter{
+    color:#1da1f2;
+}
+#linkedin{
+    color:#0e76a8;
+    border-radius: 50%;
+}
+
+
+.timing{
+    padding-top:100px;
+    text-align: left;
+    padding-left:80px;
+}
+.business-time{
+   
+    height:15px;
+    width:15px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+.business-overtime{
+    height:15px;
+    width:15px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+.personal-time{
+    height:15px;
+    width:15px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.color-theme{
+    padding-top:110px;
+    color:white !important;
+}
+.time-card{
+    position: relative;
+    background-color: rgba(0,0,0 ,0.6);
+    height:50%;
+    width:100%;
+    font-size: larger;
+}
+.city{
+    margin:15px 15px;
+    position: absolute;
+    top:10px;
+    left:0px;
+}
+.time{
+    position:absolute;
+    top:60px;
+    right:0px;
+}

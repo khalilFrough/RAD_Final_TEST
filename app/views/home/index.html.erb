@@ -16,9 +16,12 @@
         <div class="time-card">
                 <span class="city"><%= city.name%> </span>
                 <span class="time"><%=DateTime.now.in_time_zone(city.offset)%></span>
+                
         </div>
        
     <%end%>
+
+    
         
     </div>
     <div class="col-4">
@@ -28,7 +31,7 @@
             <button class="custom-btn">Graphite</button>
             <button class="custom-btn">White</button> <br><br>
             <p><input type="checkbox" id="24-hours" name="clock" value="24-Hour"> 24-Hour Clock</p>
-            
+            <%= @country_zone%>
         </div> <!-- end of colo theme-->
     </div>
 </div> <!-- end of row-->
